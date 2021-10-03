@@ -1,54 +1,22 @@
-<!-- <style>
-  #bber-talk{display:-webkit-flex;display:flex;width:100%;line-height:2em;height:45px;max-width:760px;text-align:left;padding:5px 15px;margin-bottom:3em;position: relative;background-color: var(--light-header);border-radius:8px;font-size:15px;}
-#bber-talk svg{fill: currentColor;vertical-align: middle;display: inline;margin-right:5px;}
-.talk-list{margin: 0;max-height: 35px;overflow: hidden;}
-.talk-list li {list-style: none;margin-bottom: 10px;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
-</style>
-<div id="bber-talk"></div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script>
-  //依赖 jQuery 库，其中 jsonUrl 改为自己的
-$(document).ready(function(){
-  if ( $("#bber-talk").length > 0 ) {
-    jsonUrl = "https://7477-twikoo-6gbp33x72a40527e-1259442930.tcb.qcloud.la/json/bber.json"
-    $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
-      var bberHtml = ''
-      $.each(res.data, function(i, item){
-        d = new Date(item.date)
-        date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
-        dataTime = '<span class="datatime">'+date+'</span>'
-        bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a href="https://immmmm.com/bb/">'+item.content+'</a></li>'
-      });
-      $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
-      Lately({ 'target': '#bber-talk .datatime' });
-    });
-    function Roll (){
-      var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
-      last_li.after(cur_li);
-    };
-    setInterval(Roll,3000);
-  }
-});
-</script> -->
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://hakakukuma.github.io//media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
-    <link rel="stylesheet" href="https://hakakukuma.github.io//styles/main.css">
-    <link rel="stylesheet" href="https://hakakukuma.github.io//media/css/font-awesome.css">
-    <meta name="description" content="皮格马利翁。" />
-    <title>大尾巴鳄鱼小憩地</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://hakakukuma.github.io//media/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+<link rel="stylesheet" href="https://hakakukuma.github.io//styles/main.css">
+<link rel="stylesheet" href="https://hakakukuma.github.io//media/css/font-awesome.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<title>大尾巴鳄鱼小憩地</title>
 
 
 <body>
+
     <div id="content">
         <div class="nav-large">
             <div class="row">
+                <!--------------- pc端菜单栏👇 ---------------->
                 <div class="side"><head>
     <link rel="stylesheet" href="https://hakakukuma.github.io//media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://hakakukuma.github.io//styles/main.css">
@@ -765,18 +733,10 @@ menulist.eq(i).show();
 
 
 </div>
-                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-                
-                <div id="tab1" class="tab">
-                    <div class="bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div class="col-md-1 col-lg-3"></div>
-                <div class="mobilebar"><head>
+                <!--------------- pc端菜单栏👆 ---------------->
+
+                <!----------- 移动端导航栏👇 ----------------->
+                <div class="tbar"> <head>
   <!-- 引入Bootstrap核心样式文件 -->
   <link rel="stylesheet" href="https://hakakukuma.github.io//media/css/bootstrap.min.css">
 </head>
@@ -908,92 +868,208 @@ menulist.eq(i).show();
         btstate = false;
       }
     }
-  </script> 
-                </div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-                    <div class="mobilebar">
-                        <img src="" alt="" class="plbg">
-<script>
-    var bgchoice = "link";
-    if(bgchoice=='default')
-        var plbgurl = ""
-    else  
-        var plbgurl = "https://pb.nichi.co/about-another-leisure"
-    $(".plbg").attr("src",plbgurl);
-    $(".plbg").fadeIn(200);
-</script>
+  </script> </div>
+                <!----------- 移动端导航栏👆 ----------------->
+
+                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+                
+                <div>
+                    <div id="tab1" class="tab">
+                        <div class="bars">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="close"></div>
                     </div>
-                    <div id='speak'>
-</div>
-    <!-- 使用markdown渲染 -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber-md.min.js" charset="utf-8" ></script> -->
-    <!-- 不使用markdown渲染 -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
-    <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script> -->
-<script>
-    var limitstr = '5'
-    lnum = parseInt(limitstr)
-    ispeakBber.init({
-            el: '#speak', // 容器选择器
-            name: '', // 显示的昵称
-            envId: '', // 环境id
-            region: 'ap-shanghai', // 腾讯云地址，默认为上海
-            limit: lnum, // 每次加载的条数，默认为5
-            avatar: '',
-            fromColor: 'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
-            loadingImg: 'https://7.dusays.com/2021/03/04/d2d5e983e2961.gif', // 自定义loading的图片，示例值为默认值
-            dbName: 'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
-        })
-        .then(function () {
-            // 哔哔加载完成后的回调函数，你可以写你自己的功能
-            console.log('哔哔 加载完成')
+                    <div class="col-lg-3"></div>
+                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                            <link rel="stylesheet" href="https://hakakukuma.github.io//media/css/font-awesome.css">
+
+    <div style="display: none;">
+        
+            
+                <span name="plfeature">https://pb.nichi.co/bright-bench-lake</span>
+                
+            <span name="pltitle">room no.9初通关感想</span>
+            <span name="pllink">https://hakakukuma.github.io/post/room-no9-chu-tong-guan-gan-xiang/</span>
+            <span name="pldate">2021-10-04</span>
+            <span name="plstats">1 min read</span>
+            
+                <span name="pltag" alt="room no.9初通关感想">room no.9</span>
+                <span name="pltaglink" alt="room no.9初通关感想">https://hakakukuma.github.io/tag/Ecue6JPx8/</span>
+            
+        
+    </div>
+
+    
+    <div id="post-container" class="eleg-allpostscontainer">
+        <div v-for="post in postinfo" class="eleg-posts">
+            <div v-if="post.elegcontainer=='eleg-postcontainer-left'">
+                    <div :class="post.elegcontainer">
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                        
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div v-else>
+                    <div :class="post.elegcontainer">
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                        
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+    var app2 = new Vue({
+      el: '#post-container',
+      mounted:function(){
+        this.getpostInfo();
+      },
+      methods:{
+         getpostInfo:function(){
+             var plflist = $("span[name='plfeature']");
+             var pltlist = $("span[name='pltitle']");
+             var plllist = $("span[name='pllink']");
+             var pldlist = $("span[name='pldate']");
+             var plslist = $("span[name='plstats']");
+             var pltaglist = $("span[name='pltag']");
+             for(var i=0;i<this.pagesize&&i<plflist.length;i++){
+                 var d = {};
+                 var tags = []
+                 d["feature"] = plflist.eq(i).html();
+                 d["title"] = pltlist.eq(i).html();
+                 d["link"] = plllist.eq(i).html();
+                 d["date"] = pldlist.eq(i).html();
+                 d['stats'] = plslist.eq(i).html();
+                 for(var j=0;j<pltaglist.length;j++){
+                     if(pltaglist.eq(j).attr('alt')==d['title'])
+                        tags.push(pltaglist.eq(j).html())
+                 }
+                 d["tags"] = tags;
+                 if(i%2==0)
+                 {
+                     d['elegcontainer'] = 'eleg-postcontainer-left';
+                     d['imgclass'] = 'eleg-img-left'
+                 }
+                 else{
+                    d['elegcontainer'] = 'eleg-postcontainer-right';
+                    d['imgclass'] = 'eleg-img-right' 
+                 }
+                 this.postinfo.push(d);
+             }
+         }
+      },
+      data: {
+        pagesize: "10",
+        postinfo:[],
+      }
     })
-</script>
-                    <!---------------------------- 评论系统👇 ------------------------->
-                    <div id="comment" class="comment">
-                        <div class="commentcontainer">
-                           
-                                    
-                              
-                                           <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    </script>
 
-<div id="gitalk-container"></div>
+                            <div>
+                                <div class="pcpagi">
+    <div class="pagi">
+        <ul>
+            
+            <li><a style="width:100px">&nbsp;</a></li>
+            
+                    <li><a id="page1">1</a></li>
+                    <li><a id="page2" class="active">2</a></li>
+                    <li><a id="page3">3</a></li>
+                    
+            <li><a style="width:100px">&nbsp;</a></li>
+            
+                </ul>
+    </div>
+</div>
+
+<div id="pagination-prev" style="display:none"> 
+</div>
+<div id="pagination-next" style="display:none"> </div>
+
+<div class="pagination-container">
+      
+    
+</div>
 
 <script>
-
-  var gitalk = new Gitalk({
-    clientID: 'e877662a8103842f9b7e',
-    clientSecret: '6d83ceeff13d3f8167c7429e0447f725364a1e46',
-    repo: 'hakakukuma.github.io',
-    owner: 'hakakukuma',
-    admin: ['hakakukuma'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
+    var prevstr = document.getElementById("pagination-prev").innerHTML;
+    var nextstr = document.getElementById("pagination-next").innerHTML;
+    var page1 = document.getElementById("page1");
+    var page2 = document.getElementById("page2");
+    var page3 = document.getElementById("page3");
+    page1.innerHTML = '-';
+    page2.innerHTML = '1';
+    page3.innerHTML = '-';
+    if (prevstr.length > 5) {
+        if (prevstr.indexOf("page/") != -1) {
+            var prevnum = parseInt(prevstr.split("page/")[1]);
+            page1.innerHTML = prevnum;
+            page2.innerHTML = prevnum + 1;
+        } else {
+            page1.innerHTML = 1;
+            page2.innerHTML = 2;
+        }
+    }
+    if (nextstr.indexOf("page/") != -1) {
+        var nextnum = parseInt(nextstr.split("page/")[1]);
+        page3.innerHTML = nextnum;
+        page2.innerHTML = nextnum - 1;
+    }
 </script>
-
-                                                      
-                               
-                                
-                              
-                          </div>
-                      </div>
-                     <!---------------------------- 评论系统👆 ------------------------->
+                                <div style="padding-bottom:10%"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
                 </div>
-                <div class="col-md-1 col-lg-2"></div>
                 <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+                
                 <!------------------ 顶部菜单栏html👇--------->
                 
                 <!------------------ 顶部菜单栏html👆--------->
-                <div class="col-xs-6 col-sm-3"></div>
             </div>
             
-                <head>
+                        <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 </head>
 
@@ -1055,27 +1131,28 @@ menulist.eq(i).show();
         }
     }
 </script>
-                
+            
         </div>
         <div id="bg">
         </div>
         <!------- 背景图加载方式👇----- -->
         <div id="bgchoice" style="display: none">link
-            </div>
-            
-            <div id="bgurl" style="display:none">https://pb.nichi.co/about-another-leisure</div>
-               
-        <!------- 背景图加载方式👆----- -->
-    </div>
+                    </div>
+                    
+                    <div id="bgurl" style="display:none">https://pb.nichi.co/about-another-leisure</div>
+                       
+        </div>
+        <!------- 背景图加载方式👆 --------------->
+</div>
+</div>
 
         <div id="landlord">
             <div class="message" style="opacity:0"></div>
             <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
         </div>
         <div id="domainname" style="display:none">https://hakakukuma.github.io/
-        </div>
+                </div>
 </body>
-
 </html>
 <!-------------------- live2d功能👇 --------------------------->
 
@@ -1089,7 +1166,7 @@ menulist.eq(i).show();
     loadlive2d("live2d", "https://hakakukuma.github.io//media/live2d/assets/tororo.model.json");
 </script>
 
-<!-------------------- live2d功能👆 --------------------------->
+<!-------------------- live2d功能👆--------------------------->
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
@@ -1109,5 +1186,6 @@ menulist.eq(i).show();
     }
 </script>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+
 
 <script src="https://hakakukuma.github.io//media/js/index.js"></script>
