@@ -2,14 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakakukuma.github.io/</id>
     <title>大尾巴鳄鱼小憩地</title>
-    <updated>2021-10-03T12:31:53.469Z</updated>
+    <updated>2022-02-19T11:45:32.793Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakakukuma.github.io/"/>
     <link rel="self" href="https://hakakukuma.github.io/atom.xml"/>
     <subtitle>皮格马利翁。</subtitle>
     <logo>https://hakakukuma.github.io/images/avatar.png</logo>
     <icon>https://hakakukuma.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 大尾巴鳄鱼小憩地</rights>
+    <rights>All rights reserved 2022, 大尾巴鳄鱼小憩地</rights>
+    <entry>
+        <title type="html"><![CDATA[关于弹丸论破同人游戏企划]]></title>
+        <id>https://hakakukuma.github.io/post/guan-yu-dan-wan-lun-po-tong-ren-you-xi-qi-hua/</id>
+        <link href="https://hakakukuma.github.io/post/guan-yu-dan-wan-lun-po-tong-ren-you-xi-qi-hua/">
+        </link>
+        <updated>2022-02-19T12:25:31.000Z</updated>
+        <content type="html"><![CDATA[<p>唉……总之目前是在分工、谈论关于工资的事。</p>
+<p>唉……累啊…………😥😥😥</p>
+<p>多人合作果然不适合我…………罢了，适应适应，加油！🤜🤛</p>
+<p>贴点最近的日常吧。</p>
+<p>😘最近开始刻橡皮章了！<br>
+虽然刻的很丑，但是练练应该就没问题了！<br>
+马上要开学了，好激动，不知道新同学怎么样。<br>
+没钱了啊………………<br>
+得去兼职了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[room no.9初通关感想]]></title>
         <id>https://hakakukuma.github.io/post/room-no9-chu-tong-guan-gan-xiang/</id>
